@@ -6,7 +6,8 @@ public class Employee {
     int empID;
     double salary;
     boolean isManager;
-    char grade;
+    String grade;
+    String compName;  // compName: CTS, grade : CTS-A
 
     //setter : write operation (data required while writing)
     public void setName(String x){
@@ -42,11 +43,15 @@ public class Employee {
         return isManager;
     }
 
-    public void setGrade(char c){
+    public void setGrade(String c){
         grade = c;
     }
 
-    public char getGrade(){
-        return grade;
+    public String getGrade(){
+        return compName + "-" +grade;
+    }
+
+    public void setCompName(String name){
+        compName = name;
     }
 }
