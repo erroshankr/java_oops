@@ -5,7 +5,7 @@ package learning.java.variables;
 public class VariableMain {
 
     public static void main(String[] args) {
-        Employee e1 = new Employee();
+        Employee e1 = new Employee(); // object creation + initialization
       //  System.out.println(e1.name + " & " + e1.empID);
       //  System.out.println(e1.getName() + " & " + e1.getEmpID());
         e1.setName("Atul");
