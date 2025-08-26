@@ -1,5 +1,7 @@
 package learning.java.variables;
 
+// Object Hash
+// Object Memory
 public class VariableMain {
 
     public static void main(String[] args) {
@@ -15,5 +17,25 @@ public class VariableMain {
         e1.setEmpID(1001);
         System.out.println(e1.getName() + " & " + e1.getEmpID() + " & " + e1.getGrade() + " & "
                              + e1.getSalary() + " & " + e1.isManager());
+
+        Employee e2 = new Employee();
+        e2.setName("Roshan");
+        e2.setGrade("A");
+        e2.setCompName("CTS");
+        e2.setManager(false);
+        e2.setSalary(1000);
+        e2.setEmpID(1001);
+        // new keyword creates a new memory location
+        System.out.println(e2.getName());
+        System.out.println(e1.getName());
+        System.out.println(e1);
+        System.out.println(e2); // package_name.class_name@ObjectHashId
+
+        Employee e3 = e1;
+        System.out.println(e3);
+        System.out.println(e3.getName());
+
+        System.out.println(e1 == e2);
+        System.out.println(e1 == e3);
     }
 }
